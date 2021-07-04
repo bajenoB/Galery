@@ -15,6 +15,14 @@ namespace Player
         public Form1()
         {
             InitializeComponent();
+            imageList1 = new ImageList();
+
+            
+            imageList1.ImageSize = new Size(255, 255);
+            imageList1.TransparentColor = Color.White;
+
+           
+            myGraphics = Graphics.FromHwnd(panel1.Handle);
         }
 
     }

@@ -1,4 +1,7 @@
-﻿
+﻿using System;
+using System.Drawing;
+using System.ComponentModel;
+using System.Windows.Forms;
 namespace Player
 {
     partial class Form1
@@ -7,6 +10,7 @@ namespace Player
         ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private int currentImage = 0;
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -34,6 +38,20 @@ namespace Player
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "Form1";
         }
+
+       
+        ListBox listBox1;
+        Label label3;
+        Button button1;
+        Button button2;
+        Button button3;
+        Button button4;
+        PictureBox pictureBox1;
+        ImageList imageList1;
+        OpenFileDialog openFileDialog1;
+        protected Graphics myGraphics;
+        Panel panel1;
+        Label label5;
 
         #endregion
     }
